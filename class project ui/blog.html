@@ -19,14 +19,14 @@
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body data-spy="scroll" data-target="#mainNav" data-offset="70">
+<body data-spy="scroll" data-target="#mainNav" data-offset="70" style="background-color: #E9E7F2;">
 <!--================Header Menu Area =================-->
 <header class="header-area">
-	<div class="main-menu">
+	<div class="main-menu" id="mainNav">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<a class="navbar-brand logo-h" href="index.html"><img src="pics/logo.png" alt=""></a>
+				<a class="navbar-brand logo-h" href="index.html" style="margin-right: -5%;"margin-top: -5%;"><img src="pics/logo.png" alt=""></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -36,18 +36,16 @@
 				<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 					<ul class="nav navbar-nav menu-nav ml-auto">
 						<li class="nav-item active"><a class="nav-link" href="index.html">صفحه نخست</a></li>
-						<li class="nav-item"><a class="nav-link" href="index.html">ویژگی ها</a></li>
-						<li class="nav-item"><a class="nav-link" href="index.html">ویدیوها</a>
-						<li class="nav-item"><a class="nav-link" href="index.html">تعرفه قیمت</a>
-						<li class="nav-item"><a class="nav-link" href="index.html">اسکرین شات ها</a>
-						<li class="nav-item submenu dropdown">
-							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">بلاگ</a>
-							<ul class="dropdown-menu">
-								<li class="nav-item"><a class="nav-link" href="blog.html">بلاگ</a></li>
-								<li class="nav-item"><a class="nav-link" href="single-blog.html">جزئیات بلاگ</a></li>
-							</ul>
-						</li>
-						<li class="nav-item"><a class="nav-link" href="contact.html">تماس با ما</a></li>
+						<li class="nav-item"><a class="nav-link" href="#video">انجمن ها</a>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">بلاگ</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="blog.html">پست ها</a></li>
+									<li class="nav-item"><a class="nav-link" href="viewmore.html"> مقالات</a></li>
+								</ul>
+							</li>
+						<li class="nav-item"><a class="nav-link" href="contact.html"> تماس با ما</a>
+						<li class="nav-item"><a class="nav-link" href="contact.html">ورود</a></li>
 					</ul>
 				</div>
 			</div>
@@ -75,26 +73,45 @@
 <section class="blog-categorie-area">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-lg-12">
+				<div class="main-title">
+					<br>
+					<br>
+					<h3 style="color: rgb(122, 77, 165);"> پست ها</h3>
+				</div>
+			</div>
+			<div class="col-lg-4">
 				<div class="categories-post">
-					<img src="pics/blog/cat-post/cat-post-3.jpg" alt="post">
+					<img src="pics/blog/cat-post/cat-post-1.jpg" alt="post" style="border-radius: 24px;">
 					<div class="categories-details">
 						<div class="categories-text">
-							<a href="blog-details.html"><h5>زندگی اجتماعی</h5></a>
+							<a href="blog-details.html"><h5>علمی</h5></a>
 							<div class="border-line"></div>
-							<p>از زندگی با هم لذت ببرید</p>
+							<p>بخون و علم اموزی کن!</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-4">
 				<div class="categories-post">
-					<img src="pics/blog/cat-post/cat-post-2.jpg" alt="post">
+					<img src="pics/blog/cat-post/cat-post-2.jpg" alt="post" style="border-radius: 24px;">
 					<div class="categories-details">
 						<div class="categories-text">
-							<a href="blog-details.html"><h5>سیاست</h5></a>
+							<a href="blog-details.html"><h5>پژوهشی</h5></a>
 							<div class="border-line"></div>
-							<p>بخشی از سیاست باشید</p>
+							<p>تحقبق و پژوش کن</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="categories-post">
+					<img src="pics/blog/cat-post/cat-post-3.jpg" alt="post" style="border-radius: 24px;">
+					<div class="categories-details">
+						<div class="categories-text">
+							<a href="blog-details.html"><h5> متفرقه</h5></a>
+							<div class="border-line"></div>
+							<p>از همه چی بدون</p>
 						</div>
 					</div>
 				</div>
@@ -114,10 +131,7 @@
 						<div class="col-md-3">
 							<div class="blog-info text-left">
 								<div class="post-tag">
-									<a href="#">غذا,</a>
-									<a class="active" href="#">تکنولوزی,</a>
-									<a href="#">سیاست,</a>
-									<a href="#">سبک زندگی</a>
+									<a href="#">پژوهشی</a>
 								</div>
 								<ul class="blog-meta list">
 									<li><a href="#">میثم لطفی<i class="fa fa-user"></i></a></li>
@@ -277,28 +291,6 @@
 			</div>
 			<div class="col-lg-4">
 				<div class="blog-left-sidebar">
-					<aside class="single-sidebar-widget search-widget">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="جستجو در پست ها">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-							</span>
-						</div><!-- /input-group -->
-						<div class="br"></div>
-					</aside>
-					<aside class="single-sidebar-widget author-widget">
-						<img class="author-img rounded-circle" src="pics/blog/author.png" alt="">
-						<h4>میلاد محمدی</h4>
-						<p>نویسنده و بلاگر</p>
-						<div class="social-icon">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-github"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
-						<p>میلاد محمدی‌ کشمرزی متولد هفتم مهرماه ۱۳۷۲ در تهران است. میلاد و برادر دوقلویش مهرداد در حالی متولد شدند که خانواده محمدی ۲ پسر داشتند و با این دو قلو تعداد برادران به ۴ رسید. </p>
-						<div class="br"></div>
-					</aside>
 					<aside class="single-sidebar-widget popular-post-widget">
 						<h3 class="widget-title">پست های پربازدید</h3>
 						<div class="media post-item">
@@ -329,10 +321,6 @@
 								<p>01 ساعت پیش</p>
 							</div>
 						</div>
-						<div class="br"></div>
-					</aside>
-					<aside class="single-sidebar-widget ads-widget">
-						<a href="#"><img class="img-fluid" src="pics/blog/add.jpg" alt=""></a>
 						<div class="br"></div>
 					</aside>
 					<aside class="single-sidebar-widget post-category-widget">
@@ -381,38 +369,6 @@
 								</a>
 							</li>
 						</ul>
-						<div class="br"></div>
-					</aside>
-					<aside class="single-sidebar-widget newsletter-widget">
-						<h4 class="widget-title">خبرنامه</h4>
-						<p>
-							ر اینجا ، من به طیف وسیعی از آیتم ها و ویژگی هایی که در زندگی از آنها استفاده می کنیم متمرکز شده ام بدون اینکه فکر دیگری به آنها بدهیم
-						</p>
-						<div class="form-group d-flex flex-row">
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-								</div>
-								<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="آدرس ایمیل" onfocus="this.placeholder = ''" onblur="this.placeholder = 'آدرس ایمیل'">
-							</div>
-							<a href="#" class="bbtns">اشتراک</a>
-						</div>
-						<p class="text-bottom">هر موقع می توانید غیرفعال کنید</p>
-						<div class="br"></div>
-					</aside>
-					<aside class="single-sidebar-widget tag-cloud-widget">
-						<h4 class="widget-title">برچسب ها</h4>
-						<ul class="list">
-							<li><a href="#">تکنولوژی</a></li>
-							<li><a href="#">فشن</a></li>
-							<li><a href="#">دوربین</a></li>
-							<li><a href="#">غذا</a></li>
-							<li><a href="#">مد</a></li>
-							<li><a href="#">ماجراجویی</a></li>
-							<li><a href="#">سبک زندگی</a></li>
-							<li><a href="#">هنر</a></li>
-							<li><a href="#">ورزش</a></li>
-						</ul>
 					</aside>
 				</div>
 			</div>
@@ -427,12 +383,12 @@
 		<div class="row">
 			<div class="col-lg-3  col-md-6 col-sm-6">
 				<div class="single-footer-widget tp-widgets">
-					<h6 class="footer-title">جدیدترین محصولات</h6>
+					<h6 class="footer-title"> قسمت ها</h6>
 					<ul class="list">
-						<li><a href="#">سایت مدیریت شده</a></li>
-						<li><a href="#">مدیریت اعتبار</a></li>
-						<li><a href="#">ابزار ها</a></li>
-						<li><a href="#">سرویس مارکتینگ</a></li>
+						<li><a href="viewmore.html"> جدیدترین مقالات</a></li>
+						<li><a href="blog.html">پست ها </a></li>
+						<li><a href="#"> انجمن ها</a></li>
+						<li><a href="contact.html">تماس با ما </a></li>
 					</ul>
 				</div>
 			</div>
@@ -451,29 +407,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 offset-lg-1">
-				<div class="single-footer-widget instafeed">
-					<h6 class="footer-title">آخرین پست های اینستاگرام</h6>
-					<ul class="list instafeed d-flex flex-wrap">
-						<li><img src="pics/instagram/Image-01.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-02.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-03.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-04.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-05.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-06.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-07.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-08.jpg" alt=""></li>
-					</ul>
-				</div>
-			</div>
 		</div>
 		<div class="row footer-bottom d-flex justify-content-between align-items-center">
 			<p class="col-lg-8 col-md-8 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="-blank">Colorlib</a>
-				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				استاد قاضی زاده<br> پروژه درس پایگاه داده			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			<p class="col-lg-8 col-md-8 footer-text m-0"><!-- Link back to Webrubik can't be removed.  -->
-				فارسی و راست چین شده  با  <i class="fa fa-heart-o" aria-hidden="true"></i> توسط <a href="https://webrubik.com/" target="-blank"> Webrubik.com</a>
-			</p>
+طراحی توسط:<br>عارفه رسولی،آرین عزیزیان،ساراپورکمالی			</p>
 			<div class="col-lg-4 col-md-4 footer-social">
 				<a href="#"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>

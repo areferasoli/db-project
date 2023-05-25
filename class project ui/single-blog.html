@@ -17,16 +17,21 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="index.html">
+	<link rel="stylesheet" href="viewmore.html">
+	<link rel="stylesheet" href="contact.html">
+
+
 </head>
 
 <body data-spy="scroll" data-target="#mainNav" data-offset="70">
 <!--================Header Menu Area =================-->
 <header class="header-area">
-	<div class="main-menu">
+	<div class="main-menu" id="mainNav">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<a class="navbar-brand logo-h" href="index.html"><img src="pics/logo.png" alt=""></a>
+				<a class="navbar-brand logo-h" href="index.html" style="margin-right: -5%;"margin-top: -5%;"><img src="pics/logo.png" alt=""></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -36,18 +41,16 @@
 				<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 					<ul class="nav navbar-nav menu-nav ml-auto">
 						<li class="nav-item active"><a class="nav-link" href="index.html">صفحه نخست</a></li>
-						<li class="nav-item"><a class="nav-link" href="index.html">ویژگی ها</a></li>
-						<li class="nav-item"><a class="nav-link" href="index.html">ویدیوها</a>
-						<li class="nav-item"><a class="nav-link" href="index.html">تعرفه قیمت</a>
-						<li class="nav-item"><a class="nav-link" href="index.html">اسکرین شات ها</a>
-						<li class="nav-item submenu dropdown">
-							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">بلاگ</a>
-							<ul class="dropdown-menu">
-								<li class="nav-item"><a class="nav-link" href="blog.html">بلاگ</a></li>
-								<li class="nav-item"><a class="nav-link" href="single-blog.html">جزئیات بلاگ</a></li>
-							</ul>
-						</li>
-						<li class="nav-item"><a class="nav-link" href="contact.html">تماس با ما</a></li>
+						<li class="nav-item"><a class="nav-link" href="#video">انجمن ها</a>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">بلاگ</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="blog.html">پست ها</a></li>
+									<li class="nav-item"><a class="nav-link" href="viewmore.html"> مقالات</a></li>
+								</ul>
+							</li>
+						<li class="nav-item"><a class="nav-link" href="contact.html"> تماس با ما</a>
+						<li class="nav-item"><a class="nav-link" href="contact.html">ورود</a></li>
 					</ul>
 				</div>
 			</div>
@@ -60,12 +63,7 @@
 	<div class="banner-inner d-flex align-items-center">
 		<div class="container">
 			<div class="banner-content text-center">
-				<div class="page--link">
-					<a href="index.html">صفحه نخست</a>
-					<a href="blog.html">بلاگ</a>
-					<a href="single-blog.html">جزئیات بلاگ</a>
-				</div>
-				<h2>جزئیات بلاگ</h2>
+				<h2>جزئیات پست</h2>
 			</div>
 		</div>
 	</div>
@@ -97,19 +95,14 @@
 								<li><a href="#">1.2M بازدید<i class="fa fa-eye"></i></a></li>
 								<li><a href="#">06 نظر<i class="fa fa-comment"></i></a></li>
 							</ul>
-							<ul class="social-links">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-github"></i></a></li>
-								<li><a href="#"><i class="fa fa-behance"></i></a></li>
-							</ul>
 						</div>
 					</div>
 					<div class="col-lg-9 col-md-9 blog-details">
 						<h2>دوربین عکاسی چاپ سریع فوجی فیلم مدل Mini 9 </h2>
 						<p class="excert" align="justify">
-							مدل «Instax Mini 9» محصولی بسیار جذاب از برند «فوجی‌فیلم» (Fujifilm) است که به عنوان وسیله‌ی سرگرمی، گزینه‌ی بسیار مناسبی برای تمام سنین محسوب می‌شود. این دوربین با کارایی و طراحی متفاوتی تولید شده است. به‌ محض اینکه با آن عکسی می‌گیرید، آن عکس از شیار کنار دوربین بیرون می‌آید. درحقیقت عملکرد دوربین چاپ سریع بدین صورت است که کارتریجی شامل تعدادی فیلم مخصوص درون دوربین قرار می‌گیرد. با فشردن شاتر، نور از دیافراگم وارد دوربین شده و روی این فیلم‌های حساس به نور اثر می‌گذارد. پس از بسته شدن مجدد دیافراگم، فیلمی که عکس روی آن ثبت شده از شیار کناری بیرون می‌آید و پس از چند دقیقه قرارگرفتن در معرض نور، کم‌کم عکس ظاهر می‌شود. برای استفاده از این دوربین باید کاغذ مخصوص آن را تهیه کنید. عکس‌ها در سایز 46×62 میلی‌متر چاپ می‌شوند. این مدل در رنگ‌های متنوعی عرضه می‌شود تا کاربران بتوانند بنابه سلیقه‌ی خود، یکی را انتخاب کنند. تمام رنگ‌های آن جذاب هستند و کاربر از استفاده‌ی آن‌ها لذت می‌برد. برای اینکه دوربین بتواند روی یک سوژه فوکوس کند، باید حداقل از آن یک متر فاصله داشته باشد. روی لنز این دوربین یک آینه‌ی بسیار کوچک قرار گرفته است تا بتوانید با کمک آن، کادر سلفی خود را ببینید؛ همچنین جالب است بدانید، این دوربین یکی از محصولات بسیار پرطرفدار فوجی‌فیلم است که برای تمامی عکاسان و افراد عادی کارایی دارد. با تهیه‌ی آن، می‌توانید سرگرمی هنرمندانه‌ای را به خود یا دوستانتان هدیه دهید. همراه این دوربین یک عدد مبدل لنز Close Up عرضه می‌شود تا در صورت لزوم بتوانید از جزئیات سوژه‌های موردنظرتان عکاسی کنید.
+							مدل «Instax Mini 9» محصولی بسیار جذاب از برند «فوجی‌فیلم» (Fujifilm) است که به عنوان وسیله‌ی سرگرمی، گزینه‌ی بسیار مناسبی برای تمام سنین محسوب می‌شود. این دوربین با کارایی و طراحی متفاوتی تولید شده است. به‌ محض اینکه با آن عکسی می‌گیرید، آن عکس از شیار کنار دوربین بیرون می‌آید. درحقیقت عملکرد دوربین چاپ سریع بدین صورت است که کارتریجی شامل تعدادی فیلم مخصوص درون دوربین قرار می‌گیرد. با فشردن شاتر، نور از دیافراگم وارد دوربین شده و روی این فیلم‌های حساس به نور اثر می‌گذارد. پس از بسته شدن مجدد دیافراگم، فیلمی که عکس روی آن ثبت شده از شیار کناری بیرون می‌آید و پس از چند دقیقه قرارگرفتن در معرض نور، کم‌کم عکس ظاهر می‌شود. برای استفاده از این دوربین باید کاغذ مخصوص آن را تهیه کنید. عکس‌ها در سایز 46×62 میلی‌متر چاپ می‌شوند. این مدل در رنگ‌های متنوعی عرضه می‌شود تا کاربران بتوانند بنابه سلیقه‌ی خود، یکی را انتخاب کنند. تمام رنگ‌های آن جذاب هستند و کاربر از استفاده‌ی آن‌ها لذت می‌برد. برای اینکه دوربین بتواند روی یک سوژه فوکوس کند، باید حداقل از آن یک متر فاصله داشته باشد. روی لنز این دوربین یک آینه‌ی بسیار کوچک قرار گرفته است تا بتوانید با کمک آن، کادر سلفی خود را ببینید؛ همچنین جالب است بدانید، این دوربین یکی از محصولات بسیار پرطرفدار فوجی‌فیلم است که برای تمامی عکاسان و افراد عادی کارایی دارد. با تهیه‌ی آن، می‌توانید سرگرمی هنرمندانه‌ای را به خود یا دوستانتان هدیه دهید. همراه این دوربین یک عدد مبدلمدل «Instax Mini 9» محصولی بسیار جذاب از برند «فوجی‌فیلم» (Fujifilm) است که به عنوان وسیله‌ی سرگرمی، گزینه‌ی بسیار مناسبی برای تمام سنین محسوب می‌شود. این دوربین با کارایی و طراحی متفاوتی تولید شده است. به‌ محض اینکه با آن عکسی می‌گیرید، آن عکس از شیار کنار دوربین بیرون می‌آید. درحقیقت عملکرد دوربین چاپ سریع بدین صورت است که کارتریجی شامل تعدادی فیلم مخصوص درون دوربین قرار می‌گیرد. با فشردن شاتر، نور از دیافراگم وارد دوربین شده و روی این فیلم‌های حساس به نور اثر می‌گذارد. پس از بسته شدن مجدد دیافراگم، فیلمی که عکس روی آن ثبت شده از شیار کناری بیرون می‌آید و پس از چند دقیقه قرارگرفتن در معرض نور، کم‌کم عکس ظاهر می‌شود. برای استفاده از این دوربین باید کاغذ مخصوص آن را تهیه کنید. عکس‌ها در سایز 46×62 میلی‌متر چاپ می‌شوند. این مدل در رنگ‌های متنوعی عرضه می‌شود تا کاربران بتوانند بنابه سلیقه‌ی خود، یکی را انتخاب کنند. تمام رنگ‌های آن جذاب هستند و کاربر از استفاده‌ی آن‌ها لذت می‌برد. برای اینکه دوربین بتواند روی یک سوژه فوکوس کند، باید حداقل از آن یک متر فاصله داشته باشد. روی لنز این دوربین یک آینه‌ی بسیار کوچک قرار گرفته است تا بتوانید با کمک آن، کادر سلفی خود را ببینید؛ همچنین جالب است بدانید، این دوربین یکی از محصولات بسیار پرطرفدار فوجی‌فیلم است که برای تمامی عکاسان و افراد عادی کارایی دارد. با تهیه‌ی آن، می‌توانید سرگرمی هنرمندانه‌ای را به خود یا دوستانتان هدیه دهید.  لنز Close Up عرضه می‌شود تا در صورت لزوم بتوانید از جزئیات سوژه‌های موردنظرتان عکاسی کنید.
 					</div>
+					<!--
 					<div class="col-lg-12">
 						<div class="quotes">
 							در دوران رونق عکاسی دیجیتال که تقریبا هر کس با هر نیاز و سلیقه‌ای می‌تواند دوربین دیجیتال مناسب خود را بیابد، هستند کسانی که به دنبال تجربه‌های هیجان‌انگیزتری می‌گردند. یکی از تجربه‌های لذت‌بخش عکاسی، عکاسی با دوربین‌های غیر‌دیجیتالی چاپ سریع است. در این دوربین‌های ساده و سرگرم‌کننده، پس از فشردن دکمه‌ی شاتر، فیلمی از داخل دوربین خارج می‌شود و پس از چند لحظه عکس شما روی آن ظاهر می‌شود. عکاسی با این دوربین‌ها بسیار سرگرم‌کننده و لذت‌بخش است و لحظه‌های شادی برای شما به ارمغان می‌آورد.
@@ -127,38 +120,12 @@
 								</p>
 							</div>
 						</div>
-					</div>
+					</div>-->
 				</div>
 				<div class="navigation-area">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-start align-items-center">
-							<div class="thumb">
-								<a href="#"><img class="img-fluid" src="pics/blog/prev.jpg" alt=""></a>
-							</div>
-							<div class="arrow">
-								<a href="#"><span class="text-white fa fa-arrow-right"></span></a>
-							</div>
-							<div class="detials">
-								<p>پست قبلی</p>
-								<a href="#"><h4>گشتی در فضا</h4></a>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-end align-items-center">
-							<div class="detials">
-								<p>پست بعدی</p>
-								<a href="#"><h4>جدیدترین تلسکوپ سال</h4></a>
-							</div>
-							<div class="arrow">
-								<a href="#"><span class="text-white fa fa-arrow-left"></span></a>
-							</div>
-							<div class="thumb">
-								<a href="#"><img class="img-fluid" src="pics/blog/next.jpg" alt=""></a>
-							</div>
-						</div>
-					</div>
 				</div>
 				<div class="comments-area">
-					<h4>04 نظر</h4>
+					<h4>همه نظرات</h4>
 					<div class="comment-list">
 						<div class="single-comment justify-content-between d-flex">
 							<div class="user justify-content-between d-flex">
@@ -170,9 +137,6 @@
 									<p class="date">24 آبان 97</p>
 									<p class="comment">هیچ وقت تسلیم نشو و ادامه بده</p>
 								</div>
-							</div>
-							<div class="reply-btn">
-								<a href="" class="btn-reply text-uppercase">پاسخ</a>
 							</div>
 						</div>
 					</div>
@@ -188,9 +152,6 @@
 									<p class="comment">به نظرم پست بی نظیری بود ممنونم</p>
 								</div>
 							</div>
-							<div class="reply-btn">
-								<a href="" class="btn-reply text-uppercase">پاسخ</a>
-							</div>
 						</div>
 					</div>
 					<div class="comment-list left-padding">
@@ -204,9 +165,6 @@
 									<p class="date">2 آذر 98</p>
 									<p class="comment">ممنونم از این همه تلاش زیباتون</p>
 								</div>
-							</div>
-							<div class="reply-btn">
-								<a href="" class="btn-reply text-uppercase">پاسخ</a>
 							</div>
 						</div>
 					</div>
@@ -222,9 +180,6 @@
 									<p class="comment">لطفا در مورد این دوربینا بیشتر پست بذارید ممنون</p>
 								</div>
 							</div>
-							<div class="reply-btn">
-								<a href="" class="btn-reply text-uppercase">پاسخ</a>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -233,17 +188,17 @@
 					<form>
 						<div class="form-group form-inline">
 							<div class="form-group col-lg-6 col-md-6 name">
-								<input type="text" class="form-control" id="name" placeholder="نام" onfocus="this.placeholder = ''" onblur="this.placeholder = 'نام'">
+								<input type="text" class="form-control" style="border-radius: 10px;" id="name" placeholder="نام" onfocus="this.placeholder = ''" onblur="this.placeholder = 'نام'">
 							</div>
 							<div class="form-group col-lg-6 col-md-6 email">
-								<input type="email" class="form-control" id="email" placeholder="آدرس ایمیل" onfocus="this.placeholder = ''" onblur="this.placeholder = 'آدرس ایمیل'">
+								<input type="email" class="form-control" style="border-radius: 10px;" id="email" placeholder="آدرس ایمیل" onfocus="this.placeholder = ''" onblur="this.placeholder = 'آدرس ایمیل'">
 							</div>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" id="subject" placeholder="موضوع" onfocus="this.placeholder = ''" onblur="this.placeholder = 'موضوع'">
+							<input type="text" class="form-control" style="border-radius: 10px;" id="subject" placeholder="موضوع" onfocus="this.placeholder = ''" onblur="this.placeholder = 'موضوع'">
 						</div>
 						<div class="form-group">
-							<textarea class="form-control mb-10" rows="5" name="message" placeholder="پیام" onfocus="this.placeholder = ''" onblur="this.placeholder = 'پیام'" required=""></textarea>
+							<textarea class="form-control mb-10" style="border-radius: 10px;" rows="5" name="message" placeholder="پیام" onfocus="this.placeholder = ''" onblur="this.placeholder = 'پیام'" required=""></textarea>
 						</div>
 						<a href="#" class="primary-btn submit-btn">ارسال</a>
 					</form>
@@ -252,24 +207,17 @@
 			<div class="col-lg-4">
 				<div class="blog-left-sidebar">
 					<aside class="single-sidebar-widget search-widget">
-						<div class="input-group">
+						<!--<div class="input-group">
 							<input type="text" class="form-control" placeholder="جستجو در پست ها">
 							<span class="input-group-btn">
 								<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
 							</span>
-						</div><!-- /input-group -->
-						<div class="br"></div>
+						</div>--><!-- /input-group -->
 					</aside>
 					<aside class="single-sidebar-widget author-widget">
 						<img class="author-img rounded-circle" src="pics/blog/author.png" alt="">
 						<h4>میلاد محمدی</h4>
-						<p>نویسنده و بلاگر</p>
-						<div class="social-icon">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-github"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
+						<p> استاد محققق</p>
 						<p>میلاد محمدی‌ کشمرزی متولد هفتم مهرماه ۱۳۷۲ در تهران است. میلاد و برادر دوقلویش مهرداد در حالی متولد شدند که خانواده محمدی ۲ پسر داشتند و با این دو قلو تعداد برادران به ۴ رسید. </p>
 						<div class="br"></div>
 					</aside>
@@ -303,10 +251,6 @@
 								<p>01 ساعت پیش</p>
 							</div>
 						</div>
-						<div class="br"></div>
-					</aside>
-					<aside class="single-sidebar-widget ads-widget">
-						<a href="#"><img class="img-fluid" src="pics/blog/add.jpg" alt=""></a>
 						<div class="br"></div>
 					</aside>
 					<aside class="single-sidebar-widget post-category-widget">
@@ -355,9 +299,9 @@
 								</a>
 							</li>
 						</ul>
-						<div class="br"></div>
 					</aside>
-					<aside class="single-sidebar-widget newsletter-widget">
+					<!--
+						<aside class="single-sidebar-widget newsletter-widget">
 						<h4 class="widget-title">خبرنامه</h4>
 						<p>
 							ر اینجا ، من به طیف وسیعی از آیتم ها و ویژگی هایی که در زندگی از آنها استفاده می کنیم متمرکز شده ام بدون اینکه فکر دیگری به آنها بدهیم
@@ -374,7 +318,9 @@
 						<p class="text-bottom">هر موقع می توانید غیرفعال کنید</p>
 						<div class="br"></div>
 					</aside>
-					<aside class="single-sidebar-widget tag-cloud-widget">
+				-->
+				<!--
+				<aside class="single-sidebar-widget tag-cloud-widget">
 						<h4 class="widget-title">برچسب ها</h4>
 						<ul class="list">
 							<li><a href="#">تکنولوژی</a></li>
@@ -387,7 +333,7 @@
 							<li><a href="#">هنر</a></li>
 							<li><a href="#">ورزش</a></li>
 						</ul>
-					</aside>
+					</aside>-->
 				</div>
 			</div>
 		</div>
@@ -401,12 +347,12 @@
 		<div class="row">
 			<div class="col-lg-3  col-md-6 col-sm-6">
 				<div class="single-footer-widget tp-widgets">
-					<h6 class="footer-title">جدیدترین محصولات</h6>
+					<h6 class="footer-title"> قسمت ها</h6>
 					<ul class="list">
-						<li><a href="#">سایت مدیریت شده</a></li>
-						<li><a href="#">مدیریت اعتبار</a></li>
-						<li><a href="#">ابزار ها</a></li>
-						<li><a href="#">سرویس مارکتینگ</a></li>
+						<li><a href="viewmore.html"> جدیدترین مقالات</a></li>
+						<li><a href="blog.html">پست ها </a></li>
+						<li><a href="#"> انجمن ها</a></li>
+						<li><a href="contact.html">تماس با ما </a></li>
 					</ul>
 				</div>
 			</div>
@@ -425,29 +371,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 offset-lg-1">
-				<div class="single-footer-widget instafeed">
-					<h6 class="footer-title">آخرین پست های اینستاگرام</h6>
-					<ul class="list instafeed d-flex flex-wrap">
-						<li><img src="pics/instagram/Image-01.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-02.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-03.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-04.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-05.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-06.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-07.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-08.jpg" alt=""></li>
-					</ul>
-				</div>
-			</div>
 		</div>
 		<div class="row footer-bottom d-flex justify-content-between align-items-center">
 			<p class="col-lg-8 col-md-8 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="-blank">Colorlib</a>
-				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				استاد قاضی زاده<br> پروژه درس پایگاه داده			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			<p class="col-lg-8 col-md-8 footer-text m-0"><!-- Link back to Webrubik can't be removed.  -->
-				فارسی و راست چین شده  با  <i class="fa fa-heart-o" aria-hidden="true"></i> توسط <a href="https://webrubik.com/" target="-blank"> Webrubik.com</a>
-			</p>
+طراحی توسط:<br>عارفه رسولی،آرین عزیزیان،ساراپورکمالی			</p>
 			<div class="col-lg-4 col-md-4 footer-social">
 				<a href="#"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>

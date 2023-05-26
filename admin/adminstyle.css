@@ -77,3 +77,11 @@ th {
     max-width: 75%;
     margin-right:16px ;
 }
+.form-select{
+    width: 100%;
+    text-align: right;
+    padding: 12px;
+    margin-bottom: 16px;
+    
+
+}

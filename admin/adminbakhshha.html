@@ -2,7 +2,6 @@
 <html dir="rtl" lang="fa">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <title>CRUD Table</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -32,7 +31,7 @@
         <div class="row">
             <div class="col-md-9" id="content">
                 <br>
-                <h1>مدیریت بلاگ</h1>
+                <h1>مدیریت بخش ها</h1>
                 <button type="button" class="btn btn-primary" id="btn1" data-toggle="modal" data-target="#newRowModal">
                     ردیف جدید
                 </button>
@@ -44,6 +43,7 @@
                             <a href="#" class="list-group-item" style="color: #fff;"> مدیریت انجمن ها</a>
                             <a href="adminunis.html" class="list-group-item" style="color: #fff;"> مدیریت  دانشکده</a>
                             <a href="adminbakhshha.html" class="list-group-item" style="color: #fff;"> مدیریت  بخش ها</a>
+
                             <a href="admin1.html" class="list-group-item" style="color: #fff;"> مدیریت  بلاگ</a>
                         </div>
                     </div>
@@ -54,11 +54,11 @@
                     <thead>
                         <tr>
                             <th>شناسه</th>
-                            <th>عنوان </th>
-                            <th>توضیحات</th>
-                            <th>دسته بندی</th>
+                            <th>کدبخش </th>
+                            <th>نام بخش</th>
+                            <th>نام دانشکده</th>
                             <th>عملیات </th>
-                            <th>تصویر </th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -84,21 +84,24 @@
                 <div class="modal-body">
                     <form id="newRowForm">
                         <div class="form-group">
-                            <label for="nameInput" >عنوان</label>
+                            <label for="nameInput" >کد بخش</label>
                             <input type="text" class="form-control" id="nameInput" required>
                         </div>
                         <div class="form-group">
-                            <label for="nameInput">توضیحات</label>
+                            <label for="nameInput">نام بخش</label>
                             <input type="text" class="form-control" id="emailInput" required>
                         </div>
                         <div class="form-group">
-                            <label for="phoneInput">دسته بندی</label>
-                            <input type="tel" class="form-control" id="phoneInput" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="imageInput">تصویر</label>
-                            <input type="file" class="form-control-file" id="imageInput" accept="image/*" required>
-                        </div>
+                        <label for="nameInput">نام دانشکده</label>
+                        <br>
+                        <select class="form-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                          <br>
+                          </div>
 
                         <button type="submit" class="btn btn-primary">ذخیره</button>
                     </form>
@@ -112,49 +115,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            // Random data for the new row
-            var randomId = Math.floor(Math.random() * 1000);
-            var randomName = "نام " + Math.floor(Math.random() * 10);
-            var randomEmail = "email" + Math.floor(Math.random() * 10) + "@example.com";
-            var randomPhone = "0912" + Math.floor(Math.random() * 10000000);
 
-            // Add the new row to the table
-            var newRow = "<tr>" +
-                "<td>" + randomId + "</td>" +
-                "<td>" + randomName + "</td>" +
-                "<td>" + randomEmail + "</td>" +
-                "<td>" + randomPhone + "</td>" +
-                "<td>" +
-                "<a href='#' class='edit-icon'><i class='fas fa-edit'></i></a> " +
-                "<a href='#' class='delete-icon'><i class='fas fa-trash'></i></a>" +
-                "</td>" +
-                "<td><img src='' alt='تصویر' style='max-width: 50px; max-height: 50px;'></td>" +
-                "</tr>";
-            $("tbody").append(newRow);
-
-            // Handle edit and delete events
-            $(".edit-icon").click(function() {
-                // Handle edit logic here
-                console.log("Edit clicked");
-            });
-
-            $(".delete-icon").click(function() {
-                // Handle delete logic here
-                console.log("Delete clicked");
-            });
-            
-            // Handle image preview
-            $("#imageInput").change(function() {
-                var file = $(this)[0].files[0];
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    $("#imagePreview").attr("src", e.target.result);
-                };
-                reader.readAsDataURL(file);
-            });
-        });
-    </script>
 </body>
 </html>

@@ -16,9 +16,14 @@ body {
 }
 .navbar {
     margin-bottom: 20px;
+    background-image: -moz-linear-gradient(0deg, #A194ED 0%, #CE8FFF 100%);
+    background-image: -webkit-linear-gradient(0deg, #A194ED 0%, #CE8FFF 100%);
+    background-image: -ms-linear-gradient(0deg, #A194ED 0%, #CE8FFF 100%);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 #sidebar {
-    background-color: #343a40;
+background-color: #2a0e80 ;
     color: #fff;
     padding-top: 20px;
     position:fixed;
@@ -29,14 +34,27 @@ body {
     z-index: 1;
     overflow-x: hidden;
     padding-right: 20px;
-    width: 250px;
+    width: 200px;
+    text-align: left!important;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 #sidebar .list-group-item {
     background-color: transparent;
     border: none;
+    
+}
+.btn-primary {
+    background-color: #2a0e80 !important;
+    border-color: #2a0e80 !important;
+    border-radius: 10px;
 }
 #sidebar .list-group-item:hover {
-    background-color: #212529;
+    background-color: #724de4;
+    color: #ffea00;
+    text-align: center;
+    border-radius: 50px;
+    margin-left: 16px;
 }
 #content {
     margin-left: 270px;
@@ -75,7 +93,8 @@ th {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
-    margin-right:16px ;
+    margin-right:64px ;
+
 }
 .form-select{
     width: 100%;
@@ -85,3 +104,20 @@ th {
     
 
 }
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #f9e5ff;
+    background-clip: padding-box;
+    border: 1px solid rgb(93, 8, 145);
+    border-radius: 0.3rem;
+    outline: 0;}
+
+  * {
+        text-align: right;
+    }

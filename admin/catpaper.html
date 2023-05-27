@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Table</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="adminstyle.css">
+    <link rel="stylesheet" href="adminbakhshha.html">
+    <link rel="stylesheet" href="adminunis.html">
+    <link rel="stylesheet" href="admin1.html">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>قالب ریسپانسیو تک صفحه ای BulkApp :: دریافت شده از وب روبیک</title>
+	<!-- fav icon -->
+	<link rel="icon" href="pics/favicon.png" type="image/png">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- fonts -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- style and css -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="index.html">
+	<link rel="stylesheet" href="viewmore.html">
+	<link rel="stylesheet" href="contact.html">
+	<link rel="stylesheet" href="cat.html">
+    <link rel="stylesheet" href="papers.html">
+    <link rel="stylesheet" href="anjoman.html">
+    <link rel="stylesheet" href="people.html">
+    <link rel="stylesheet" href="majors.html">
+    <link rel="stylesheet" href="catpaper.html">
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <!--sidebar-->
+    <div class="sidenav">
+        <a href="majors.html">مدیریت رشته ها </a>
+        <a href="people.html">مدیریت اعضا</a>
+        <a href="adminbakhshha.html">مدیریت بخش ها</a>
+        <a href="anjoman.html">مدیریت انجمن ها</a>
+        <a href="adminunis.html">مدیریت  دانشکده</a>
+        <a href="catpaper.html">دسته بندی مقالات</a>
+        <button class="dropdown-btn">مدیریت  بلاگ
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="admin1.html">مدیریت  پست ها</a>
+          <a href="papers.html">مدیریت  مقالات</a>
+
+        </div>
+        <a href="#contact">خروج</a>
+      </div>
+        <!--sidebar-->
+
+  <!--nav-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end" >
+    <a class="navbar-brand" href="#">پنل ادمین </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--nav-->
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9" id="content">
+            <br>
+            <h1>دسته بندی مقالات</h1>
+            <button type="button" class="btn btn-primary" id="btn1" data-toggle="modal" data-target="#newRowModal">
+                ردیف جدید
+            </button>
+            
+
+            <!--culumn names-->
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>شناسه</th>
+                        <th>نام دسته بندی </th>
+                        <th>اسلاگ</th>
+                        <th>عملیات </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- جدول پر می‌شود -->
+                </tbody>
+            </table>
+            <!--culumn names-->
+        </div>
+    </div>
+</div>
+
+<!-- مودال ردیف جدید -->
+<div class="modal fade" id="newRowModal" tabindex="-1" role="dialog" aria-labelledby="newRowModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newRowModalLabel">افزودن ردیف جدید</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="بستن" style="margin-left: 0px;">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="newRowForm">
+                    <div class="form-group">
+                        <label for="nameInput" >نام دسته بندی</label>
+                        <input type="text" class="form-control" id="nameInput" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nameInput">اسلاگ</label>
+                        <input type="text" class="form-control" id="emailInput" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">ذخیره</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ </body>
+ </html>
+
+
+        <script>
+            //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script>
+        

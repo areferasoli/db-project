@@ -10,44 +10,55 @@
     <link rel="stylesheet" href="adminbakhshha.html">
     <link rel="stylesheet" href="adminunis.html">
     <link rel="stylesheet" href="admin1.html">
+    <link rel="stylesheet" href="catpaper.html">
+
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end" >
-        <a class="navbar-brand" href="#">پنل ادمین </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">خروج</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        <!--sidebar-->
+        <div class="sidenav">
+            <a href="majors.html">مدیریت رشته ها </a>
+            <a href="people.html">مدیریت اعضا</a>
+            <a href="adminbakhshha.html">مدیریت بخش ها</a>
+            <a href="anjoman.html">مدیریت انجمن ها</a>
+            <a href="adminunis.html">مدیریت  دانشکده</a>
+            <a href="catpaper.html">دسته بندی مقالات</a>
+            <button class="dropdown-btn">مدیریت  بلاگ
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="admin1.html">مدیریت  پست ها</a>
+              <a href="papers.html">مدیریت  مقالات</a>
+    
+            </div>
+            <a href="#contact">خروج</a>
+          </div>
+            <!--sidebar-->
+      <!--nav-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end" >
+            <a class="navbar-brand" href="#">پنل ادمین </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+     <!--nav-->
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-9" id="content">
                 <br>
-                <h1>مدیریت بلاگ</h1>
+                <h1>مدیریت پست</h1>
                 <button type="button" class="btn btn-primary" id="btn1" data-toggle="modal" data-target="#newRowModal">
                     ردیف جدید
                 </button>
-                <div class="col-md-3">
-                    <div id="sidebar">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item" style="color: #fff;">مدیریت رشته ها </a>
-                            <a href="#" class="list-group-item" style="color: #fff;"> مدیریت اعضا</a>
-                            <a href="#" class="list-group-item" style="color: #fff;"> مدیریت انجمن ها</a>
-                            <a href="adminunis.html" class="list-group-item" style="color: #fff;"> مدیریت  دانشکده</a>
-                            <a href="adminbakhshha.html" class="list-group-item" style="color: #fff;"> مدیریت  بخش ها</a>
-                            <a href="admin1.html" class="list-group-item" style="color: #fff;"> مدیریت  بلاگ</a>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <!--culumn names-->
                 <table class="table table-bordered">
@@ -56,6 +67,7 @@
                             <th>شناسه</th>
                             <th>عنوان </th>
                             <th>توضیحات</th>
+                            <th>خلاصه</th>
                             <th>دسته بندی</th>
                             <th>عملیات </th>
                             <th>تصویر </th>
@@ -89,6 +101,10 @@
                         </div>
                         <div class="form-group">
                             <label for="nameInput">توضیحات</label>
+                            <input type="text" class="form-control" id="emailInput" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nameInput">خلاصه</label>
                             <input type="text" class="form-control" id="emailInput" required>
                         </div>
                         <div class="form-group">
@@ -158,3 +174,26 @@
     </script>
 </body>
 </html>
+
+
+<script>
+    //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+

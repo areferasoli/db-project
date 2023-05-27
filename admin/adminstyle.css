@@ -19,8 +19,7 @@ body {
     background-image: -moz-linear-gradient(0deg, #A194ED 0%, #CE8FFF 100%);
     background-image: -webkit-linear-gradient(0deg, #A194ED 0%, #CE8FFF 100%);
     background-image: -ms-linear-gradient(0deg, #A194ED 0%, #CE8FFF 100%);
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+
 }
 #sidebar {
 background-color: #2a0e80 ;
@@ -74,6 +73,7 @@ h1 {
 }
 .table {
     margin-top: 20px;
+    width: 90%;
 }
 th {
     background-color: #f8f9fa;
@@ -121,3 +121,227 @@ th {
   * {
         text-align: right;
     }
+    
+
+    
+    body{
+     min-height: 100vh;
+     background: white;
+     background-size: cover;
+     background-position: center;
+    }
+    
+    .side-bar{
+     background: #1b1a1b;
+     backdrop-filter: blur(15px);
+     width: 250px;
+     height: 100vh;
+     position: fixed;
+     top: 0;
+     left: -250px;
+     overflow-y: auto;
+     transition: 0.6s ease;
+     transition-property: left;
+    }
+    .side-bar::-webkit-scrollbar {
+      width: 0px;
+    }
+    
+    
+    
+    .side-bar.active{
+     left: 0;
+    }
+    h1{
+    
+      text-align: center;
+      font-weight: 500;
+      font-size: 25px;
+      padding-bottom: 13px;
+      letter-spacing: 2px;
+    }
+    
+    .side-bar .menu{
+     width: 100%;
+     margin-top: 30px;
+    }
+    
+    .side-bar .menu .item{
+     position: relative;
+     cursor: pointer;
+    }
+    
+    .side-bar .menu .item a{
+     color: #fff;
+     font-size: 16px;
+     text-decoration: none;
+     display: block;
+     padding: 5px 30px;
+     line-height: 60px;
+    }
+    
+    .side-bar .menu .item a:hover{
+     background: #33363a;
+     transition: 0.3s ease;
+    }
+    
+    .side-bar .menu .item i{
+     margin-right: 15px;
+    }
+    
+    .side-bar .menu .item a .dropdown{
+     position: absolute;
+     right: 0;
+     margin: 20px;
+     transition: 0.3s ease;
+    }
+    
+    .side-bar .menu .item .sub-menu{
+     background: #262627;
+     display: none;
+    }
+    
+    .side-bar .menu .item .sub-menu a{
+     padding-left: 80px;
+    }
+    
+    .rotate{
+     transform: rotate(90deg);
+    }
+    
+    .close-btn{
+     position: absolute;
+     color: #fff;
+    
+     font-size: 23px;
+     right:  0px;
+     margin: 15px;
+     cursor: pointer;
+    }
+    
+    .menu-btn{
+     position: absolute;
+     color: rgb(0, 0, 0);
+     font-size: 35px;
+     margin: 25px;
+     cursor: pointer;
+    }
+    
+    .main{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 50px;
+    }
+    
+    .main h1{
+     color: rgba(255, 255, 255, 0.8);
+     font-size: 60px;
+     text-align: center;
+     line-height: 80px;
+    }
+    
+    @media (max-width: 900px){
+     .main h1{
+       font-size: 40px;
+       line-height: 60px;
+     }
+    }
+    img{
+      width: 100px;
+      margin: 15px;
+      border-radius: 50%;
+      margin-left: 70px;
+      border: 3px solid #b4b8b9;
+    }
+    header{
+      background: #33363a;
+    }
+    .dropdown {
+        float:right!important;
+        background-color:#724de4 ;
+        border:#724de4 ;
+    }
+    .dropdown:hover {
+        float:right!important;
+        background-color:#724de4 ;
+        border:#724de4 ;
+    }
+    .dropdown.dropdown:click {
+        float:right!important;
+        background-color:#724de4 ;
+        border:#724de4 ;
+    }
+h1{
+    color: black;
+}
+    th{
+        color: black !important;
+    }
+*
+
+
+
+
+
+    .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #2a0e80;
+        color: #ffffff;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+      
+      /* Style the sidenav links and the dropdown button */
+      .sidenav a, .dropdown-btn {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #ffffff;
+        display: block;
+        border: none;
+        background: none;
+        width:100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+      }
+      
+      /* On mouse-over */
+      .sidenav a:hover, .dropdown-btn:hover {
+        color: #f1f1f1;
+        background-color: #724de4;
+      }
+      
+      /* Main content */
+      .main {
+        margin-left: 200px; /* Same as the width of the sidenav */
+        font-size: 20px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      
+      /* Add an active class to the active dropdown button */
+      .active {
+        background-color: #724de4;
+        color: white;
+      }
+      
+      /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+      .dropdown-container {
+        display: none;
+        background-color: #2a0e80;
+        color: white;
+        padding-left: 8px;
+      }
+      
+      /* Optional: Style the caret down icon */
+      .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+      }

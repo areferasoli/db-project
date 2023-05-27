@@ -29,12 +29,42 @@
 	<link rel="stylesheet" href="viewmore.html">
 	<link rel="stylesheet" href="contact.html">
 	<link rel="stylesheet" href="cat.html">
+    <link rel="stylesheet" href="papers.html">
+    <link rel="stylesheet" href="anjoman.html">
+    <link rel="stylesheet" href="people.html">
+    <link rel="stylesheet" href="majors.html">
+    <link rel="stylesheet" href="catpaper.html">
+
+
+
+
+
 
 
 
 
 </head>
 <body>
+    <!--sidebar-->
+    <div class="sidenav">
+        <a href="majors.html">مدیریت رشته ها </a>
+        <a href="people.html">مدیریت اعضا</a>
+        <a href="adminbakhshha.html">مدیریت بخش ها</a>
+        <a href="anjoman.html">مدیریت انجمن ها</a>
+        <a href="adminunis.html">مدیریت  دانشکده</a>
+        <a href="catpaper.html">دسته بندی مقالات</a>
+        <button class="dropdown-btn">مدیریت  بلاگ
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="admin1.html">مدیریت  پست ها</a>
+          <a href="papers.html">مدیریت  مقالات</a>
+
+        </div>
+        <a href="#contact">خروج</a>
+      </div>
+        <!--sidebar-->
+  <!--nav-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end" >
         <a class="navbar-brand" href="#">پنل ادمین </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -48,7 +78,7 @@
             </ul>
         </div>
     </nav>
-
+ <!--nav-->
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-9" id="content">
@@ -57,23 +87,7 @@
                 <button type="button" class="btn btn-primary" id="btn1" data-toggle="modal" data-target="#newRowModal">
                     ردیف جدید
                 </button>
-                <div class="col-md-3">
-                    <div id="sidebar">
-                        <div class="list-group">
-                            <h4 style="text-align: center; color: rgb(255, 221, 254);"> مدیریت</h4>
-                            <a href="#" class="list-group-item" style="color: #fff;">مدیریت رشته ها </a>
-                            <a href="#" class="list-group-item" style="color: #fff;"> مدیریت اعضا</a>
-                            <a href="#" class="list-group-item" style="color: #fff;"> مدیریت انجمن ها</a>
-                            <a href="adminunis.html" class="list-group-item" style="color: #fff;"> مدیریت  دانشکده</a>
-                            <a href="adminbakhshha.html" class="list-group-item" style="color: #fff;"> مدیریت  بخش ها</a>
-                            <a href="admin1.html" class="list-group-item" style="color: #fff;"> مدیریت  بلاگ</a>
-                            <br>
-                            <a href="admin1.html" class="list-group-item" style="color: #ffffff;text-align: center !important; background-color:#fc83b0;border-radius: 20px;margin-left: 16px;"> خروج</a>
-
-                        </div>
-                    </div>
-                </div>
-
+              
                 <!--culumn names-->
                 <table class="table table-bordered">
                     <thead>
@@ -81,6 +95,7 @@
                             <th>شناسه</th>
                             <th>کد دانشکده </th>
                             <th>نام دانشکده</th>
+                            <th>عملیات </th>
                             
                         </tr>
                     </thead>
@@ -130,3 +145,20 @@
 
 </body>
 </html>
+<script>
+    //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>

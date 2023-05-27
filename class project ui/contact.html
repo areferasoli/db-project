@@ -17,17 +17,28 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+		<!-- html pages -->
+	<link rel="stylesheet" href="index.html">
+	<link rel="stylesheet" href="viewmore.html">
+	<link rel="stylesheet" href="contact.html">
+	<link rel="stylesheet" href="cat.html">
+	<link rel="stylesheet" href="login.html">
+
 </head>
 
-<body data-spy="scroll" data-target="#mainNav" data-offset="70">
 
+
+<body data-spy="scroll" data-target="#mainNav" data-offset="70" style="background-color: #E9E7F2;">
+
+
+    
 <!--================Header Menu Area =================-->
 <header class="header-area">
 	<div class="main-menu" id="mainNav">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<a class="navbar-brand logo-h" href="index.html"><img src="pics/logo.png" alt=""></a>
+				<a class="navbar-brand logo-h" href="index.html" style="margin-right: -5%;"margin-top: -5%;"><img src="pics/logo.png" alt=""></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -37,130 +48,69 @@
 				<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 					<ul class="nav navbar-nav menu-nav ml-auto">
 						<li class="nav-item active"><a class="nav-link" href="index.html">صفحه نخست</a></li>
-						<li class="nav-item"><a class="nav-link" href="index.html">ویژگی ها</a></li>
-						<li class="nav-item"><a class="nav-link" href="index.html">ویدیوها</a>
-						<li class="nav-item"><a class="nav-link" href="index.html">تعرفه قیمت</a>
-						<li class="nav-item"><a class="nav-link" href="index.html">اسکرین شات ها</a>
-						<li class="nav-item submenu dropdown">
-							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">بلاگ</a>
-							<ul class="dropdown-menu">
-								<li class="nav-item"><a class="nav-link" href="blog.html">بلاگ</a></li>
-								<li class="nav-item"><a class="nav-link" href="single-blog.html">جزئیات بلاگ</a></li>
-							</ul>
-						</li>
-						<li class="nav-item"><a class="nav-link" href="contact.html">تماس با ما</a></li>
+						<li class="nav-item"><a class="nav-link" href="cat.html">دسته بندی ها</a>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">بلاگ</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="blog.html">پست ها</a></li>
+									<li class="nav-item"><a class="nav-link" href="viewmore.html"> مقالات</a></li>
+								</ul>
+							</li>
+
+						<li class="nav-item"><a class="nav-link" href="contact.html"> تماس با ما</a>
+						<li class="nav-item"><a class="nav-link" href="login.html">ورود</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</div>
 </header>
+
 <!--================Header Menu Area =================-->
-<!--================Home Banner Area =================-->
-<section class="banner-area">
-	<div class="banner-inner d-flex align-items-center">
-		<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-		<div class="container">
-			<div class="banner-content text-center">
-				<div class="page--link">
-					<a href="index.html">صفحه نخست</a>
-					<a href="contact.html">تماس با ما</a>
+<!--================Blog Categorie Area =================-->
+<section class="blog-categorie-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="main-title">
+					<br>
+					<br>
+					<h3 style="color: rgb(122, 77, 165);">تماس با ما</h3>
 				</div>
-				<h2>تماس با ما</h2>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================End Home Banner Area =================-->
-
-<!--================Contact Area =================-->
-<section class="contact-area p-120">
-	<div class="container">
-		<iframe src="https://www.google.com/maps/d/embed?mid=1jhPavSwNuZZ-baJ_9_axHb7-XpYluuf8" width="100%" height="480"></iframe>
-		<br><br><br><br>
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="contact-info">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <input type="email" class="form-control mb-1 form-control-sm p-2"  placeholder="نام و نام خانوادگی">
+                    <input type="email" class="form-control mb-1 form-control-sm  p-2"  placeholder="ایمیل">
+                    <input type="email" class="form-control form-control-sm  p-2"  placeholder="شماره تماس">
+                  </div>
+            </div>
+            <div class="col">
+                <textarea class="form-control mb-1 form-control-sm py-2" rows="3" placeholder="متن پیام"></textarea>
+                <button class="send-btn border-0 rounded">ارسال پیام</button>
+            </div>
+            <div class="col">
+                <div class="contact-info">
 					<div class="info-item">
 						<i class="fa fa-home"></i>
 						<h6>ایران | شیراز</h6>
-						<p>شیراز</p>
 					</div>
 					<div class="info-item">
 						<i class="fa fa-phone"></i>
 						<h6><a href="#">09032309534</a></h6>
-						<p>همه روزه</p>
 					</div>
 					<div class="info-item">
 						<i class="fa fa-envelope"></i>
 						<h6><a href="#">info@webrubik.com</a></h6>
-						<p>نظرات خود را برای ما بفرستید</p>
 					</div>
-				</div>
-			</div>
-			<div class="col-lg-9">
-				<form class="row contact-form" action="contact-process.php" method="post" id="contactForm" novalidate="novalidate">
-					<div class="col-md-6">
-						<div class="form-group">
-							<input type="text" class="form-control" id="name" name="name" placeholder="نام شما">
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control" id="email" name="email" placeholder="آدرس ایمیل">
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" id="subject" name="subject" placeholder="موضوع">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<textarea class="form-control" name="message" id="message" rows="1" placeholder="پیام"></textarea>
-						</div>
-					</div>
-					<div class="col-md-12 text-right">
-						<button type="submit" value="submit" class="btn submit-btn">ارسال پیام</button>
-					</div>
-				</form>
-			</div>
-		</div>
+				</div>            
+            </div>
+        </div>
 	</div>
 </section>
-<!--================Contact Area =================-->
-
-
-
-<!--================Contact Success and Error message Area =================-->
-<div id="success" class="modal modal-message fade" role="dialog">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<i class="fa fa-close"></i>
-				</button>
-				<h2>ممنونم</h2>
-				<p>پیام شما با موفقیت ارسال شد</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- Modals error -->
-
-<div id="error" class="modal modal-message fade" role="dialog">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<i class="fa fa-close"></i>
-				</button>
-				<h2>ببخشید !</h2>
-				<p> یه چیزی به مشکل برخورده </p>
-			</div>
-		</div>
-	</div>
-</div>
-<!--================End Contact Success and Error message Area =================-->
-
-
+<!--================Blog Categorie Area =================-->
 
 <!--================ start footer Area  =================-->
 <footer class="footer-area p-120">
@@ -168,12 +118,12 @@
 		<div class="row">
 			<div class="col-lg-3  col-md-6 col-sm-6">
 				<div class="single-footer-widget tp-widgets">
-					<h6 class="footer-title">جدیدترین محصولات</h6>
+					<h6 class="footer-title"> قسمت ها</h6>
 					<ul class="list">
-						<li><a href="#">سایت مدیریت شده</a></li>
-						<li><a href="#">مدیریت اعتبار</a></li>
-						<li><a href="#">ابزار ها</a></li>
-						<li><a href="#">سرویس مارکتینگ</a></li>
+						<li><a href="viewmore.html"> جدیدترین مقالات</a></li>
+						<li><a href="blog.html">پست ها </a></li>
+						<li><a href="cat.html">دسته بندی ها</a></li>
+						<li><a href="contact.html">تماس با ما </a></li>
 					</ul>
 				</div>
 			</div>
@@ -192,29 +142,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 offset-lg-1">
-				<div class="single-footer-widget instafeed">
-					<h6 class="footer-title">آخرین پست های اینستاگرام</h6>
-					<ul class="list instafeed d-flex flex-wrap">
-						<li><img src="pics/instagram/Image-01.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-02.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-03.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-04.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-05.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-06.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-07.jpg" alt=""></li>
-						<li><img src="pics/instagram/Image-08.jpg" alt=""></li>
-					</ul>
-				</div>
-			</div>
 		</div>
 		<div class="row footer-bottom d-flex justify-content-between align-items-center">
 			<p class="col-lg-8 col-md-8 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="-blank">Colorlib</a>
-				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				استاد قاضی زاده<br> پروژه درس پایگاه داده			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			<p class="col-lg-8 col-md-8 footer-text m-0"><!-- Link back to Webrubik can't be removed.  -->
-				فارسی و راست چین شده  با  <i class="fa fa-heart-o" aria-hidden="true"></i> توسط <a href="https://webrubik.com/" target="-blank"> Webrubik.com</a>
-			</p>
+طراحی توسط:<br>عارفه رسولی،آرین عزیزیان،ساراپورکمالی			</p>
 			<div class="col-lg-4 col-md-4 footer-social">
 				<a href="#"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>
@@ -226,10 +159,6 @@
 </footer>
 <!--================ End footer Area  =================-->
 
-
-
-
-
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
@@ -239,8 +168,6 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src=js/jquery-magnific-popup.min.js></script>
 	<script src="js/theme.js"></script>
-	<script src="js/contact.js"></script>
-	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body><!-- This template has been downloaded from Webrubik.com -->
 </html>
